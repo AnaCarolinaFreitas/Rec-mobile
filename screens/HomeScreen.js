@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   },
   searchRow: {
     flexDirection: "row",
-    marginTop: 20,
+    margin: 20,
     alignItems: "center",
     gap: 10,
   },
