@@ -1,5 +1,5 @@
-Tela Home
-![home screen](./assets/home.png)
+# Tela Home
+![home screen](./assets/home.png);
 
-Tela Favorite
+# Tela Favorite
 ![Favorite Movie Screen](./assets/favorite.png)
