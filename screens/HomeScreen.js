@@ -27,7 +27,7 @@ export default function HomeScreen({ navigation }) {
       <View style={styles.listContainer}>
         <Text style={styles.title}>Popular Movies</Text>
         <FlatList
-          style={styles.list}
+          contentContainerStyle={styles.list}
           data={filmes}
           horizontal
           renderItem={({ item }) => <FilmeItem imageUrl={item.imageUrl} />}
@@ -38,7 +38,7 @@ export default function HomeScreen({ navigation }) {
       <View style={styles.topRatedContainer}>
         <Text style={styles.title}>Top Rated Movies</Text>
         <FlatList
-          style={styles.ratedList}
+          contentContainerStyle={styles.ratedList}
           data={topRated}
           renderItem={({ item }) => <RatedItem imageUrl={item.imageUrl} />}
           keyExtractor={(item) => item.imageUrl}
@@ -76,8 +76,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    marginBottom: 5,
-    marginTop: 10,
+    margin: 10
   },
   list: {
     flexDirection: "row",
@@ -86,11 +85,9 @@ const styles = StyleSheet.create({
   },
   topRatedContainer: {
     flex: 1,
-    padding: 10,
     marginBottom: 20,
   },
   ratedList: {
-    flex: 1,
-    margin: 10,
+    alignItems: "center",
   },
 });
